@@ -14,40 +14,10 @@
         android:layout_height="match_parent" >
 
         <!-- Header aligned to top -->
-        <RelativeLayout
-            android:id="@+id/header"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:background="#AFA7EF"
-            android:gravity="center">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="Header"
-                android:textColor="#000000"
-                android:textSize="20sp" />
-        </RelativeLayout>
+        <include layout="@layout/header"/>
 
         <!-- Footer aligned to bottom -->
-        <RelativeLayout
-            android:id="@+id/footer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="#6AED83"
-            android:gravity="center">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="Footer"
-                android:textColor="#000000"
-                android:textSize="20sp" />
-        </RelativeLayout>
+        <include layout="@layout/footer"/>
 
         <!-- Content below header and above footer -->
         <RelativeLayout
@@ -66,5 +36,5 @@
         </RelativeLayout>
 
     </RelativeLayout>
-    
+
 </androidx.constraintlayout.widget.ConstraintLayout>
